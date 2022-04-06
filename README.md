@@ -19,6 +19,8 @@
 17. What is the ranking of selectors with respect to specificity
 18. how can we apply same styles to multiple selectors?
 19. What are the differences between relative and absolute in CSS?
+
+
 1. Ans. To comment in CSS, simply place your plain text inside /* */ marks. This tells  the browser that they are notes and should not be rendered on the front end.
 2. Ans. A pseudo-class is used to define a special state of an element.
    1. For example, it can be used to:
