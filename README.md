@@ -98,4 +98,73 @@ This div element is moved 50 pixels to the right, and 100 pixels down from its c
 - flex-basis
 - The flex property sets the flexible length on flexible items.
 - Note: If the element is not a flexible item, the flex property has no effect.
+
+
+- ```Ans6.``` Grid and flexbox. The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time.
+```js
+<div class="wrapper">
+  <div>One</div>
+  <div>Two</div>
+  <div>Three</div>
+  <div>Four</div>
+  <div>Five</div>
+</div>
+
+​​.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+Flex Example :
+.wrapper {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapper > div {
+  flex: 1 1 150px;
+}
+```
+
+
+- ``` Ans7.``` If you are using flexbox and find yourself disabling some of the flexibility, you probably need to use CSS Grid Layout. An example would be if you are setting a percentage width on a flex item to make it line up with other items in a row above. In that case, a grid is likely to be a better choice.
+- Use a grid when you already have the layout structure in mind, and flex when you just want everything to fit.
+
+
+- ```Ans8.``` When we want to implement a 2d design by using the grid and lest us says we want 5 elements in 1 row and 10 elements in 2nd row and 1 elements in 3rd row.
+
+- ```Ans9```. A combinator is something that explains the relationship between the selectors. A CSS selector can contain more than one simple selector.
+```js
+1.Descendant combinator
+.box p {
+    color: red;
+}  
+  
+<div class="box"><p>Text in .box</p></div>
+<p>Text not in .box</p>
+```
+```js  
+ii) Child combinator
+ul > li {
+    border-top: 5px solid red;
+}  
+<ul>
+    <li>Unordered item</li>
+    <li>Unordered item
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ol>
+    </li>
+</ul>
+```
+```js
+iii)Adjacent sibling combinator
+The adjacent sibling selector (+) is placed between two CSS selectors. It matches only those elements matched by the second selector that are the next sibling element of the first selector. For example, to select all <img> elements that are immediately preceded by a <p> element.
+p + img
+```
+```js
+iv)General sibling combinator
+If you want to select siblings of an element even if they are not directly adjacent, then you can use the general sibling combinator (~). To select all <img> elements that come anywhere after <p> elements, we'd do this: p ~ img
+```
+
 - ```Ans19:~``` position: relative places an element relative to its current position without changing the layout around it, whereas position: absolute places an element relative to its parent's position and changing the layout around it.
