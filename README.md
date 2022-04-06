@@ -167,4 +167,85 @@ iv)General sibling combinator
 If you want to select siblings of an element even if they are not directly adjacent, then you can use the general sibling combinator (~). To select all <img> elements that come anywhere after <p> elements, we'd do this: p ~ img
 ```
 
+```js
+Ans10. The object-fit CSS property sets how the content of a replaced element, such as an <img> or <video> , should be resized to fit its container. You can alter the alignment of the replaced element's content object within the element's box using the object-position property.
+
+Ans11: The rotate() CSS function defines a transformation that rotates an element around a fixed point on the 2D plane, without deforming it.
+HTML:~
+<div>Normal</div>
+<div class="rotated">Rotated</div>
+CSS:~
+div {
+  width: 80px;
+  height: 80px;
+  background-color: skyblue;
+}
+
+.rotated {
+  transform: rotate(45deg); /* Equal to rotateZ(45deg) */
+  background-color: pink;
+}
+
+
+Ans12: An animation lets an element gradually change from one style to another.
+You can change as many CSS properties you want, as many times as you want.
+To use CSS animation, you must first specify some keyframes for the animation.
+Keyframes hold what styles the element will have at certain times
+The @keyframes Rule
+When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times.
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<div></div>
+
+Ans13:~ The [attribute] selector is used to select elements with a specified attribute.
+a[target] {
+  background-color: yellow;
+}
+input[type="text"] {
+  width: 150px;
+  display: block;
+  margin-bottom: 10px;
+  background-color: yellow;
+
+
+Ans14:~ The @media rule is used in media queries to apply different styles for different media types/devices.
+@media screen and (min-width: 400px) {
+  body {
+	background-color: lightgreen;
+  }
+}
+
+Ans15:~ To override the CSS properties of a class using another class, we can use the !important directive.
+
+Ans16:~  css odd even child
+
+tr:nth-child(even) {background: #CCC}
+tr:nth-child(odd) {background: #FFF}
+
+li:nth-child(even){
+color: green
+}
+
+Ans17:~ Every selector has its place in the specificity hierarchy. If two selectors apply to the same element, the one with higher specificity wins. There are four distinct categories which define the specificity level of a given selector: inline styles, IDs, classes, attributes, and elements.
+Ans18:~ Grouping CSS selectors helps minimise the size of your stylesheet so it loads faster Admittedly, style sheets are not the main culprits in slow loading; CSS files are text files, so even very long CSS sheets are tiny when compared to unoptimized images. Still, every bit of optimization helps, and if you can save some size off your CSS and load the pages that much faster, that's a good thing.
+Grouping selectors also makes site maintenance far easier. If you need to make a change, you can simply edit a single CSS rule instead of multiple ones. This approach saves time and hassle.
+Ex1. div, p { color: #f00; }
+Ex2. th, td, p.red, div#firstred { color: red; }
+```
 - ```Ans19:~``` position: relative places an element relative to its current position without changing the layout around it, whereas position: absolute places an element relative to its parent's position and changing the layout around it.
