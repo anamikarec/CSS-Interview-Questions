@@ -21,8 +21,8 @@
 19. What are the differences between relative and absolute in CSS?
 
 
-1. Ans. To comment in CSS, simply place your plain text inside /* */ marks. This tells  the browser that they are notes and should not be rendered on the front end.
-2. Ans. A pseudo-class is used to define a special state of an element.
+- ```Ans1```. To comment in CSS, simply place your plain text inside /* */ marks. This tells  the browser that they are notes and should not be rendered on the front end.
+- ```Ans2.``` A pseudo-class is used to define a special state of an element.
    1. For example, it can be used to:
    2. Style an element when a user mouses over it.
    3. Style visited and unvisited links differently.
