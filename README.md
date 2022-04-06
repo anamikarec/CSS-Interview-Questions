@@ -45,4 +45,57 @@
     color: #0000FF;
     }
 ```
+
+- ```Ans3``` If there are two or more CSS rules that point to the same element, the selector with the highest specificity value will "win", and its style declaration will be applied to that HTML element. Think of specificity as a score/rank that determines which style declarations are ultimately applied to an element.
+```js
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <style>
+    .test {color: green;} 
+    p{
+    color: red;
+    } 
+    #ptag{
+        color:yellow;
+    }
+    </style>
+    </head>
+    <body>
+    <p class="test" id="ptag">Hello World!</p>
+
+    </body>
+    </html>
+```
+
+- ```Ans4:```The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis).
+```js
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transform: translate(50px,100px);
+}
+</style>
+</head>
+<body>
+<div>
+This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
+</div>
+
+</body>
+</html>
+```
+
+- ```Ans5.``` The flex property is a shorthand property for:
+- flex-grow
+- flex-shrink
+- flex-basis
+- The flex property sets the flexible length on flexible items.
+- Note: If the element is not a flexible item, the flex property has no effect.
 - ```Ans19:~``` position: relative places an element relative to its current position without changing the layout around it, whereas position: absolute places an element relative to its parent's position and changing the layout around it.
