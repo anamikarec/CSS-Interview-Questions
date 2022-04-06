@@ -45,3 +45,4 @@
     color: #0000FF;
     }
 ```
+- ```Ans19:~``` position: relative places an element relative to its current position without changing the layout around it, whereas position: absolute places an element relative to its parent's position and changing the layout around it.
